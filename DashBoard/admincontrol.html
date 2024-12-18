@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon</title>
+    <script src="https://kit.fontawesome.com/8de99c9367.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/image/mylogo.jpg">
+    <link rel="stylesheet" href="admincontrol.css">
+    <link rel="stylesheet" href="mobilecss/Admin-controlmobile.css">
+</head>
+
+<body>
+    <!-- Top nav start here -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-hospital"></i>
+                <span>Hospital</span>
+            </div>
+            <div class="hero">
+                <a href="Profile.html"><img src="men-profile.jpg" alt="error"></a>
+            </div>
+        </nav>
+    </header>
+    <!-- top nav end here -->
+
+    <!-- admin controller menu start here -->
+    <aside>
+        <button onclick="fun1()" class="btn1" id="btn1"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="fun2()" class="btn2" id="btn2"><i class="fa-solid fa-bars"></i></button>
+        <div class="admin-menu" id="menu">
+            <ul class="menu">
+                <li><a href="dashboarda.html" target=""><i class="fa-solid fa-bars-staggered"></i>Dashboard</a></li>
+                <span></span>
+                <li><a href="admincontrol.html" target=""><i class="fa-solid fa-user-tie"></i>Admin-Control</a></li>
+                <span></span>
+                <li><a href="revenue.html" target=""><i class="fa-solid fa-chart-simple"></i>Revenue</a></li>
+                <span></span>
+                <li><a href="profitloss.html" target=""><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                <span></span>
+                <li><a href="message.html" target=""><i class="fa-regular fa-comments"></i>Message</a></li>
+                <span></span>
+                <li><a href="team.html" target=""><i class="fa-solid fa-people-group"></i>Team</a></li>
+                <span></span>
+                <li><a href="#"><i class="fa-solid fa-gears"></i> Setting</a></li>
+                <span></span>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a></li>
+                <span></span>
+            </ul>
+        </div>
+        <div class="home">
+            <div class="sec1">
+                <div class="box1">
+                    <a href="sales.html">Sale-Summary</a>
+                </div>
+                <span class="line1"></span>
+            </div>
+            <div class="sec2">
+                <div class="box1">
+                    <a href="profitloss.html">Profit-loss</a>
+                </div>
+                <span class="line1"></span>
+                <div class="box2">
+                    <a href="#">Employees</a>
+                </div>
+                <span class="line2"></span>
+                <div class="box3">
+                    <a href="revenue.html">Revenue</a>
+                </div>
+            </div>
+            <div class="sec3">
+                <div class="box1">
+                    <a href="logistic.htmls">Logistics</a>
+                </div>
+                <span class="line1"></span>
+                <div class="box2">
+                    <a href="#">Products</a>
+                </div>
+                <span class="line2"></span>
+            </div>
+
+        </div>
+    </aside>
+
+    <script>
+        let y=document.getElementById("menu");
+        let a=document.getElementById("btn1");
+        let b=document.getElementById("btn2");
+        function fun2(){
+            y.style.left="0%"
+            a.style.zIndex="2";
+            a.style.display="block";
+            b.style.zIndex="0";
+            
+
+        }
+        function fun1(){
+            y.style.left="-100%"
+            b.style.zIndex="2";
+            a.style.zIndex="0";
+            
+        }
+    </script>
+</body>
+
+</html>

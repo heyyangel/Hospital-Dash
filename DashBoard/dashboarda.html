@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <script src="https://kit.fontawesome.com/8de99c9367.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="men-profile.jpg">
+    <link rel="stylesheet" href="Dashboarda.css">
+</head>
+
+<body>
+    <!-- Top nav start here -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-hospital"></i>
+                <span>Hospital</span>
+            </div>
+            <div class="hero">
+                <a href="Profile.html"><img src="men-profile.jpg" alt="error"></a>
+            </div>
+        </nav>
+    </header>
+    <!-- top nav end here -->
+
+    <!-- admin controller menu start here -->
+    <aside>
+        <button onclick="fun1()" class="btn1" id="btn1"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="fun2()" class="btn2" id="btn2"><i class="fa-solid fa-bars"></i></button>
+        <div class="admin-menu" id="menu">
+            <ul class="menu">
+                <li><a href="dashboarda.html" target=""><i class="fa-solid fa-bars-staggered"></i>Dashboard</a></li>
+                <span></span>
+                <li><a href="admincontrol.html" target=""><i class="fa-solid fa-user-tie"></i>Admin-Control</a></li>
+                <span></span>
+                <li><a href="revenue.html" target=""><i class="fa-solid fa-chart-simple"></i>Revenue</a></li>
+                <span></span>
+                <li><a href="profitloss.html" target=""><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                <span></span>
+                <li><a href="message.html" target=""><i class="fa-regular fa-comments"></i>Message</a></li>
+                <span></span>
+                <li><a href="team.html" target=""><i class="fa-solid fa-people-group"></i>Team</a></li>
+                <span></span>
+                <li><a href="#"><i class="fa-solid fa-gears"></i> Setting</a></li>
+                <span></span>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a></li>
+                <span></span>
+            </ul>
+        </div>
+        <div class="home">
+            <div class="home1">
+                <div class="home-top">
+                    <div class="greetings">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <span>Categories</span>
+                    </div>
+                    <div class="search">
+                        <input type="search" class="search-box" placeholder="Search Here" required>
+                        <a href="Search.html" class="btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    <div class="notify">
+                        <a href="#"><i class="fa-solid fa-bell"></i><i class="fa-solid fa-circle dot"></i></a>
+                    </div>
+                </div>
+                <div class="home-bottom">
+                    <div class="upper">
+                        <div class="box">
+                            <a href="#"><i class="fa-solid fa-user-doctor"></i>Doctors</a>
+                            <span>6000</span>
+                        </div>
+                        <div class="box">
+                            <a href="#"><i class="fa-solid fa-user-nurse"></i>Nurses</a>
+                            <span>37100</span>
+                        </div>
+                        <div class="box">
+                            <a href="#"><i class="fa-solid fa-bed-pulse"></i></i>Patients</a>
+                            <span>5629</span>
+                        </div>
+                        <div class="box">
+                            <a href="#"><i class="fa-solid fa-prescription-bottle-medical"></i>Pharmacusts</a>
+                            <span>50%<i class="fa-solid fa-up-long"></i></span>
+                        </div>
+                        
+                    </div>
+                    <div class="lower">
+                        <span class="user">Users Overview</span>
+                        <div class="box1">
+                            <div class="box-left">
+                                <span class="up">100k</span>
+                                <span class="down">Total Patients</span>
+                            </div>
+                            <div class="box-right">
+                                <span>1%<i class="fa-solid fa-up-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="box-left">
+                                <span class="up">10k</span>
+                                <span class="down">New Patients</span>
+                            </div>
+                            <div class="box-right">
+                                <span>10%<i class="fa-solid fa-up-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="box-left">
+                                <span class="up">1000k</span>
+                                <span class="down">prescription</span>
+                            </div>
+                            <div class="box-right">
+                                <span>60%<i class="fa-solid fa-up-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="box1">
+                            <div class="box-left">
+                                <span class="up">100k</span>
+                                <span class="down">Profit-Loss</span>
+                            </div>
+                            <div class="box-right">
+                                <span>51%<i class="fa-solid fa-up-long"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </aside>
+    <script>
+        let y=document.getElementById("menu");
+        let a=document.getElementById("btn1");
+        let b=document.getElementById("btn2");
+        function fun2(){
+            y.style.left="0%"
+            a.style.zIndex="2";
+            a.style.display="block";
+            b.style.zIndex="0";
+            
+
+        }
+        function fun1(){
+            y.style.left="-100%"
+            b.style.zIndex="2";
+            a.style.zIndex="0";
+            
+        }
+    </script>
+</body>
+
+</html>
